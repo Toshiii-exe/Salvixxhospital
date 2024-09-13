@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Hospital</title>
+    <link rel="stylesheet" href="/CSS/patientregistrationpage.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/FAVICON/mstile-150x150.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/FAVICON/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/FAVICON/favicon-16x16.png">
+    <link rel="manifest" href="/FAVICON/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container" id="header-container">
+            <img src="/IMAGES/SAlivixx (1).webp" alt="Hospital Logo" class="logo" id="logo">
+            <h1 id="site-title">Salvixx</h1>
+            <nav class="navbar" id="navbar">
+                <ul>
+                    <li><a href="/HTML/index.html" class="homepage-link" id="home-link">Home</a></li>
+                    <li><a href="/HTML/about.html" id="about-link">About</a></li>
+                    <li><a href="/HTML/services.html" id="services-link">Services</a></li>
+                    <li><a href="/HTML/doctors.html" id="doctors-link">Doctors</a></li>
+                    <li><a href="/HTML/Resevation.html" id="reservation-link">Reservation</a></li>
+                    <li><a href="/HTML/Pharma.html" id="pharmacy-link">Pharmacy</a></li>
+                    <li><a href="/HTML/FAq.html" id="faq-link">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="patient-registration-form">
+        <form>
+            <h2>Patients Registration Form</h2>
+            <div class="form info">
+                <label for="patients-name">Full Name:</label>
+                <input type="text" id="patients-name" name="patients-name" required>
+            </div>
+                <br>
+            <div class="form info">
+                <label for="patients-address">Address:</label>
+                <input type="text" id="patients-address" name="patients-address" required>
+            </div>
+                <br>
+            <div class="form info">
+                <label for="patients-email">Email Address:</label>
+                <input type="email" id="patients-email" name="patients-email" required>
+            </div>
+                <br>
+            <div class="form info">
+                <label for="patients-reg-day">Date of the registration:</label>
+                <input type="date" id="patients-reg-day" name="patients-reg-day" required>
+            </div>
+                <br>
+            <div class="form info">
+                <label for="patients-contact">Phone Number:</label>
+                <input type="tel" id="patients-contact" name="patients-contact" required>
+            </div>
+                <br>
+            <div class="form-info">
+                <label for="patients-gender">Gender:</label>
+                <select id="patients-gender" name="patients-gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <br>
+            <button class="button3">Proceed</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy;2024 Salvixx. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

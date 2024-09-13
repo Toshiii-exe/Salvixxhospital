@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image:url('/IMAGES/bckgrd01.webp') ;
+    color: white;
+    line-height: 1.6;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: darkslategrey;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+/*space for the body part*/
+
+.patient-registration-form {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: gray;
+    border-radius: 5px;
+}
+
+.patient-registration-form h2 {
+    text-align: center;
+    font-size: 26px;
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.patient-registration-form .form {
+    margin-bottom: 20px;
+}
+
+.patient-registration-form label {
+    display: block;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.patient-registration-form input,
+.patient-registration-form select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+  
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+    margin-bottom: 10px;
+    background-color: #444;
+    color: white;
+}
+
+
+.patient-registration-form input:focus,
+.patient-registration-form select:focus {
+    border-color: #065d5d;
+    box-shadow: 0 0 5px white;
+    outline: none;
+}
+/*The above one gives a shadow highlight to the selected form space */
+
+
+.patient-registration-form .button3 {
+    width: 100%;
+    padding: 10px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.patient-registration-form .button3:hover {
+    background-color: #c0392b;
+}
+
+/**/
+
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+    /* Header and Navigation */
+    .nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .website-logo h1 {
+        font-size: 20px;
+    }
+
+    .nav1 {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .Hotline, .search-bar, .profile-pic {
+        margin: 5px 0;
+    }
+
+    .navigations {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .navigations a {
+        padding: 8px 12px;
+        font-size: 16px;
+    }
+
+    .patient-registration-form{
+        width: 360px;
+    }
+
+    /* Footer */
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        padding: 20px 10px;
+    }
+
+    .footer-bar {
+        padding-left: 0;
+    }
+
+    .icons-container {
+        gap: 20px;
+        padding-right: 0;
+    }
+    .patient-registration-form {
+        padding: 10px;
+    }
+
+    .patient-registration-form h2 {
+        font-size: 20px;
+    }
+
+    .form.info label {
+        font-size: 14px;
+    }
+
+    .form.info input,
+    .form-info select {
+        font-size: 14px;
+    }
+
+    .button3 {
+        font-size: 14px;
+    }
+}

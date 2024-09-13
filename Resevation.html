@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulting Reservation</title>
+    <link rel="stylesheet" href="/CSS/reservation.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/FAVICON/mstile-150x150.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/FAVICON/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/FAVICON/favicon-16x16.png">
+    <link rel="manifest" href="/FAVICON/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container" id="header-container">
+            <img src="/IMAGES/SAlivixx (1).webp" alt="Hospital Logo" class="logo" id="logo">
+            <h1 id="site-title">Salvixx</h1>
+            <nav class="navbar" id="navbar">
+                <ul>
+                    <li><a href="/HTML/index.html" class="homepage-link" id="home-link">Home</a></li>
+                    <li><a href="/HTML/about.html" id="about-link">About</a></li>
+                    <li><a href="/HTML/services.html" id="services-link">Services</a></li>
+                    <li><a href="/HTML/doctors.html" id="doctors-link">Doctors</a></li>
+                    <li><a href="/HTML/Resevation.html" id="reservation-link">Reservation</a></li>
+                    <li><a href="/HTML/Pharma.html" id="pharmacy-link">Pharmacy</a></li>
+                    <li><a href="/HTML/FAq.html" id="faq-link">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="reservation-form-section" class="reservation-form">
+        <div class="reservation-form-container">
+            <h2 id="reservation-heading">Consultation Reservation Form</h2>
+            <form action="submit-reservation.php" method="POST" id="reservation-form">
+                <div class="form-group" id="form-name-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group" id="form-email-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group" id="form-phone-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group" id="form-doctor-group">
+                    <label for="doctor">Select Doctor:</label>
+                    <select id="doctor" name="doctor" required>
+                        <option value="" disabled selected>Select a Doctor</option>
+                        <option value="doctor1">Dr. Smith</option>
+                        <option value="doctor2">Dr. Johnson</option>
+                        <option value="doctor3">Dr. Lee</option>
+                        <option value="doctor4">Dr. Brown</option>
+                    </select>
+                </div>
+
+                <div class="form-group" id="form-date-group">
+                    <label for="date">Preferred Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <div class="form-group" id="form-time-group">
+                    <label for="time">Preferred Time:</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+
+                <div class="form-group" id="form-comments-group">
+                    <label for="comments">Additional Comments:</label>
+                    <textarea id="comments" name="comments" rows="4"></textarea>
+                </div>
+
+                <button type="submit" id="reservation-submit-button">Reserve Now</button>
+            </form>
+        </div>
+    </section>
+
+    <footer id="reservation-footer">
+        <p>&copy;2024 Salvixx. All rights reserved.</p>
+    </footer>
+</body>
+</html>

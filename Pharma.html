@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy</title>
+    <link rel="stylesheet" href="/CSS/pharma.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/FAVICON/mstile-150x150.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/FAVICON/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/FAVICON/favicon-16x16.png">
+    <link rel="manifest" href="/FAVICON/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container" id="header-container">
+            <img src="/IMAGES/SAlivixx (1).webp" alt="Hospital Logo" class="logo" id="logo">
+            <h1 id="site-title">Salvixx</h1>
+            <nav class="navbar" id="navbar">
+                <ul>
+                    <li><a href="/HTML/index.html" class="homepage-link" id="home-link">Home</a></li>
+                    <li><a href="/HTML/about.html" id="about-link">About</a></li>
+                    <li><a href="/HTML/services.html" id="services-link">Services</a></li>
+                    <li><a href="/HTML/doctors.html" id="doctors-link">Doctors</a></li>
+                    <li><a href="/HTML/Resevation.html" id="reservation-link">Reservation</a></li>
+                    <li><a href="/HTML/Pharma.html" id="pharmacy-link">Pharmacy</a></li>
+                    <li><a href="/HTML/FAq.html" id="faq-link">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="pharma-container">
+        <h1 class="pharma-title">Hospital Pharmacy</h1>
+        <form class="pharma-form">
+            <div class="pharma-form-group">
+                <label for="pharma-customer-name" class="pharma-form-label">Customer Name:</label>
+                <input type="text" id="pharma-customer-name" name="pharma-customer-name" class="pharma-input-field" required>
+            </div>
+
+            <div class="pharma-form-group">
+                <label for="pharma-medicine" class="pharma-form-label">Select Medicine:</label>
+                <select id="pharma-medicine" name="pharma-medicine" class="pharma-input-field" required>
+                    <option value="" disabled selected>Select your medicine</option>
+                    <option value="aspirin">Aspirin</option>
+                    <option value="paracetamol">Paracetamol</option>
+                    <option value="amoxicillin">Amoxicillin</option>
+                    <option value="ibuprofen">Ibuprofen</option>
+                </select>
+            </div>
+
+            <div class="pharma-form-group">
+                <label for="pharma-quantity" class="pharma-form-label">Quantity:</label>
+                <input type="number" id="pharma-quantity" name="pharma-quantity" class="pharma-input-field" min="1" required>
+            </div>
+
+            <div class="pharma-form-group">
+                <label for="pharma-notes" class="pharma-form-label">Additional Notes:</label>
+                <textarea id="pharma-notes" name="pharma-notes" class="pharma-input-field" rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="pharma-button">Buy Medicine</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <p>&copy;2024 Salvixx. All rights reserved.</p>
+    </footer>
+</body>
+</html>
